@@ -1,0 +1,32 @@
+body{
+	background-color: white;
+}
+
+p{
+	
+	color:red;
+}
+
+h1{
+	font-size:100px;
+}
+
+#idPrincipal{
+	margin:50px;
+}
+
+.miClase{
+	width: 900px;
+}
+
+div p{
+	color:blue;
+}
+
+.miClase, div, span{
+
+}
+
+div:hover{
+	background:lightgray;
+}

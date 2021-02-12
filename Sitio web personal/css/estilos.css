@@ -1,0 +1,283 @@
+*{
+	margin:0;;
+	padding:0;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: "Love";
+	src:url('../fonts/Love.ttf');
+}
+
+body{
+	background: white;
+}
+
+.boton{
+	position: fixed;
+	right:15px;
+	bottom:10px;
+	widht: 10px;
+	hight: 10px;
+	size: 20px 20px; 
+	overflow: hidden;
+}
+
+
+
+header{
+	background:linear-gradient(
+		rgba(0,0,0,.6),
+		rgba(0,0,0,.2),
+		rgba(0,0,0,.6)
+		),url('../img/header.jpg');
+	width: 100%;
+	height: 95vh;
+	background-size: cover;
+	background-position: center; 
+
+}
+.contenedor{
+	width:80%;
+	margin:0 auto;
+}
+
+/* Menú */
+
+nav{
+	position: fixed;
+	width:100%;
+}
+
+nav ul{
+	text-align: center;
+	list-style: none;
+	margin-top: 25px;
+}
+nav ul li{
+	display:inline-block;
+	padding: 20px;
+	transition: all .3s ease;
+}
+nav ul li:hover{
+	transform:scale(1.1);
+
+}
+nav ul li:hover a{
+	border-bottom: 1px solid white;
+	color: #E7EBC5;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-size: 24px;
+}
+
+/* HEADER */
+
+.contenedor-titulo{
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.contenedor-titulo h1{
+	font-size: 48px;
+	color: white;
+	border:10px double white;
+	padding:50px 40px;
+	font-family: "Love";
+}
+
+
+
+/* PRINCIPAL */
+
+article{
+	padding-top: 20px;
+	text-align:center;
+	border-bottom: 4px dotted gray;
+	margin-bottom: 20px;
+}
+
+article h3{
+	font-size: 32px;
+	padding: 0 0 30px 0;
+}
+
+article p{
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+blockquote{
+	font-size:18px;
+	padding-bottom: 30px;
+}
+
+div.cont-tabla{
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+.cont-tabla table{
+	width: 100%;
+	text-align: center;
+}
+.cont-tabla table td{
+	padding:30px 20px; 
+}
+
+div.img-tabla{
+	width: 50%;
+	display: inline-block;
+	height: 300px;
+	overflow: hidden;
+}
+
+div.img-tabla img{
+	
+	overflow: hidden;
+	/*
+	<div class="tabla">
+			<div class="contenedor">
+				<div class="cont-tabla">
+					
+					<table>
+						<thead>
+							
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+
+				</div>
+				<div class="img-tabla">
+					<img src="img/ejemplo (2).png" alt="Esta es la imagen de la tabla" width="200px">
+				</div>
+				<div class="img-tabla">
+					<img src="img/ejemplo (1).png" alt="Esta es la imagen de la tabla" width="200px">
+				</div>
+			</div>
+		</div>
+		*/
+}
+
+/* Sección llamada */
+.llamada{
+	background:url('../img/llamada.jpg');
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 50px 0;
+	margin-top: 20px;
+}
+
+.llamada-texto{
+	text-align: center;
+}
+
+.llamada-texto h3{
+	font-size: 32px;
+	color: white;
+	padding-top:50px; 
+}
+
+.llamada-texto button{
+	padding:10px 20px;
+	margin-top: 20px;
+	border:none;
+	background: #ffa630;
+	color: white;
+	font-size: 20px;
+	border-radius: 2px;
+	transition: all .3s ease;
+}
+
+button:hover{
+	transform: scale(1.1);
+}
+
+/* Footer */
+
+footer{
+	height: 50px;
+	background:#989788;
+	text-align: center;
+	padding-top: 15px;
+}
+footer p{
+	color:white;	
+}
+
+/* Gallery - Grids */
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    /*padding: 60px 0;*/
+}
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
